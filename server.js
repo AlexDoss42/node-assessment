@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 
 
-const server = app.listen(3000, () => console.log(`It's over Anakin. I have the 3000 port`))
+app.listen(3000, () => console.log(`It's over Anakin. I have the 3000 port`))
 
 app.get('/api/user', userCtrl.getAll)
 app.get('/api/user/:userId', userCtrl.getUserById,)
